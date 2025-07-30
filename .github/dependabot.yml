@@ -1,0 +1,8 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"  # Root directory where requirements.txt is located
+    schedule:
+      interval: "daily"  # Check for updates every day
+    open-pull-requests-limit: 5
+    # Removed 'allow' block to include both direct and transitive dependencies
